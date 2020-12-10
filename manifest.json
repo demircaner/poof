@@ -9,7 +9,7 @@
     ]
   },
   "browser_action": {
-    "default_icon": "icons/icons8-wind-50.png"
+    "default_icon": "icons/icons8-wind-brightblue-48.png"
   },
   "content_scripts": [
       {
