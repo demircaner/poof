@@ -19,6 +19,7 @@ const checkMatchesAndSendMessage = () => {
   }
 }
 
-checkMatchesAndSendMessage();
+// run after 10 seconds, enough time for user to click confirmation box
+setTimeout(checkMatchesAndSendMessage, 10000);
 
 
