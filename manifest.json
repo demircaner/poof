@@ -13,13 +13,7 @@
   },
   "content_scripts": [
       {
-          "matches": [
-            "*://*.zoom.us/j/*",
-            "*://*.zoom.us/s/*",
-            "*://*.zoom.us/postattendee*",
-            "*://*.zoom.us/wc/leave*",
-            "*://prod.liveshare.vsengsaas.visualstudio.com/join*"
-          ],
+          "matches": ["<all_urls>"],
           "js": ["src/content.js"],
           "css": ["src/styles.css"]
       }
