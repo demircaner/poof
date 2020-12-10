@@ -6,4 +6,7 @@ chrome.runtime.onMessage.addListener((message, sender) => {
   }
 })
 
-// set up listener for 
+// set up listener for browser action click
+// open options page (embedded or new tab) that allows user to add a new urlPrefix (pre-populated with current tab's url)
+// when user clicks save, it pushes url to a urlPrefix array stored in chrome.storage
+// so now content.js should check for matches in that array
