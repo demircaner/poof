@@ -2,6 +2,8 @@
 chrome.runtime.onMessage.addListener((message, sender) => {
   if (message.shouldCloseTab) {
     // if message is true then close current tab by referencing to sender id
+    // will close window if only one tab open
+    // ISSUE: brings focus back to browser when it closes (instead of staying on Zoom)
     chrome.tabs.remove(sender.tab.id);
   }
 })
