@@ -8,13 +8,17 @@
       "src/background.js"
     ]
   },
+  "browser_action": {
+    "default_icon": "icons/icons8-wind-50.png"
+  },
   "content_scripts": [
       {
           "matches": [
             "*://*.zoom.us/j/*",
             "*://*.zoom.us/s/*",
             "*://*.zoom.us/postattendee*",
-            "*://*.zoom.us/wc/leave*"
+            "*://*.zoom.us/wc/leave*",
+            "*://prod.liveshare.vsengsaas.visualstudio.com/join*"
           ],
           "js": ["src/content.js"],
           "css": ["src/styles.css"]
