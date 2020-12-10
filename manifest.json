@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "ZoomCloser",
+  "version": "1.0",
+  "description": "Close those pesky Zoom tabs!",
+  "background": {
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "content_scripts": [
+      {
+          "matches": [
+            "*://*.zoom.us/j/*",
+            "*://*.zoom.us/s/*",
+            "*://*.zoom.us/postattendee*",
+            "*://*.zoom.us/wc/leave*"
+          ],
+          "js": ["jquery-3.1.1.min.js", "src/content.js"],
+          "css": ["src/styles.css"]
+      }
+  ]
+}
