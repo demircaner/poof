@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "ZoomCloser",
-  "version": "1.0",
-  "description": "Close those pesky Zoom tabs!",
+  "name": "Poof",
+  "version": "1.0.0",
+  "description": "Make your unnecessary tabs go POOF!",
   "background": {
     "scripts": [
       "src/background.js"
@@ -15,7 +15,11 @@
       {
           "matches": ["<all_urls>"],
           "js": ["src/content.js"],
-          "css": ["src/styles.css"]
+          "css": ["src/options.css"]
       }
-  ]
+  ],
+  "icons": {
+    "96": "icons/icons8-wind-brightblue-96.png"
+  },
+  "options_page": "src/options.html"
 }
